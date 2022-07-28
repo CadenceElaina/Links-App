@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+:root {
+    --txt: rgb(255, 255, 255);
+    --c1: #130f1f;
+    --c2: #19355d;
+    --c3: #505ba3;
+    --c4: #a285f3;
+    --c5: #ffc0f5;
+    /*  same colors below, but with opacity ^_^  */
+    --rc1: rgba(19, 15, 31, .6);
+    --rc2: rgba(25, 53, 93, .6);
+    --rc3: rgba(80, 91, 163, .5);
+    --rc4: rgba(162, 133, 243, .5);
+    --rc5: rgba(255, 192, 245, 1);
+    --rc6: rgba(255, 192, 245, .6);
+}
+
+body {
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+table {
+    background: var(--rc4);
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 5px;
+    width: 80%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    animation: float 5s infinite;
+}
+
+.row:hover {
+    color: white !important;
+    background-color: var(--rc2);
+}
+
+table .row td:hover {
+    color: white;
+}
+
+.title {
+    width: 100%;
+}
+
+.tag {
+    width: 100%;
+}
+
+.author {
+    width: 100%;
+}
+
+th {
+    color: white;
+    background: #222;
+    border-bottom: 4px solid #9ea7af;
+    border-right: 1px solid #343a45;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 24px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+}
+
+th:first-child {
+    border-top-left-radius: 3px;
+}
+
+th:last-child {
+    border-top-right-radius: 3px;
+    border-right: none;
+}
+
+tr {
+    width: 100%;
+    background-color: var(--rc6);
+    border-top: 1px solid #C1C3D1;
+    border-bottom: 1px solid #C1C3D1;
+    color: black;
+    font-size: 1rem;
+    font-weight: normal;
+    text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+tr:hover td {
+    background: var(--rc4);
+    color: var(--c1);
+    border-top: 1px solid #22262e;
+}
+
+tr:first-child {
+    border-top: none;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+tr:nth-child(odd) td {
+    background: #EBEBEB;
+}
+
+tr:nth-child(odd):hover td {
+    background: #4E5066;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 3px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 3px;
+}
+
+td {
+    width: 90%;
+    background: #FFFFFF;
+    padding: 20px;
+
+    vertical-align: middle;
+    font-weight: 300;
+
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+    border-right: 0px;
+}
+
+th.text-left {
+    text-align: left;
+}
+
+th.text-center {
+    text-align: center;
+}
+
+th.text-right {
+    text-align: right;
+}
+
+td.text-left {
+    text-align: left;
+}
+
+td.text-center {
+    text-align: center;
+}
+
+td.text-right {
+    text-align: right;
+}

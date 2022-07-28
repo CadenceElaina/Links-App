@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+:root {
+    --txt: rgb(255, 255, 255);
+    --c1: #130f1f;
+    --c2: #19355d;
+    --c3: #505ba3;
+    --c4: #a285f3;
+    --c5: #ffc0f5;
+    --rc1: rgba(19, 15, 31, .6);
+    --rc2: rgba(25, 53, 93, .6);
+    --rc3: rgba(80, 91, 163, 1);
+    --rc4: rgba(162, 133, 243, 1);
+    --rc5: rgba(255, 192, 245, 1);
+    --rc6: rgba(255, 192, 245, .6);
+
+}
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(60deg, var(--c1) 50%, var(--c3) 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+#contact {
+    font-size: 1.25rem;
+    color: var(--c4);
+    margin-top: 6rem;
+}
+
+.problem {
+    font-size: 2rem;
+    color: #FFF;
+    margin-top: 7.5%;
+    margin-bottom: 4%;
+}
+
+.chall {
+    font-size: .9rem;
+    color: lightgray;
+}
+
+.email a {
+    transition: 0.3s;
+    color: #fff;
+}
+
+.email p a {
+    transition: 0.3s;
+}
+
+.leftLink {
+    margin-left: -1rem;
+}
+
+.rightLink {
+    margin-right: 5.5rem;
+    margin-top: -1.5rem;
+    float: right;
+
+}
+
+.email a:hover {
+    color: var(--c4);
+    /*    transform: scale(1.5); */
+}
+
+.email {
+    margin-top: 3rem;
+}
+
+.left {
+    background-color: var(--rc1);
+    width: 40%;
+    min-height: 100vh;
+    float: left;
+    border-right: 2px solid var(--c5);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.right {
+    min-height: 100vh;
+    width: 60%;
+    float: right;
+}
+
+.contact {
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+    background-color: var(--rc2);
+    min-height: 100vh;
+}
+
+.container {
+
+    text-align: center;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+    margin: 2rem .5rem;
+    padding: 1rem;
+    width: 90%;
+    min-height: 2em;
+}
+
+input:hover {
+    box-shadow: 3px 0 40px 5px var(--rc6), -3px 0 40px 5px var(--rc6);
+}
+
+button[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 3rem;
+    font-size: 1.1rem;
+    background-color: var(--rc1);
+    border-color: white;
+    min-width: 300px;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--rc5);
+    color: var(--c2);
+}
