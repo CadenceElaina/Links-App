@@ -165,3 +165,11 @@ button[type="submit"]:hover {
     background-color: var(--rc5);
     color: var(--c2);
 }
+.home{
+    font-size: 1.3rem;
+    color: var(--c4);
+    text-decoration: none;
+}
+.home:hover{
+    color: var(--c1);
+}
